@@ -1,0 +1,59 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Computer Science</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Login.css" />
+</head>
+<body>
+
+    <div class="nav">
+        <div class="dropdown1">
+            <img onclick="showHide1()" src="../img/ellipsis.png" alt="..." style="width:60px; cursor: pointer;">
+            <div id="drop1" >
+                <a href="Profile.html">Profile</a>
+                <a href="Make Event.html">Make Event</a>
+            </div> 
+        </div>
+        <a class="home" href="Home.html">Home</a>
+        <a href="Login.html">Log in</a>
+        <a href="Signup.html">Sign up</a>
+        <div class="dropdown">
+            <img id="imag" onclick="showHide()" src="../img/img_avatar.png" alt="avatar" style="width: 50px; border-radius:50%;"> 
+        </div>
+    </div>
+
+    <div id="drop">
+        <a href="Profile.html">Profile</a>
+        <a href="Make Event.html">Make Event</a>
+    </div> 
+
+    <div class="container">
+        <form action="#">
+            <input type="text" id="usname" placeholder="Username..." minlength="5" autofocus>
+            <input type="password"  id="pass" placeholder="Password..." minlength="8">
+            <input type="submit" value="Log in">
+        </form>
+    </div>
+    <script>
+        function showHide() {
+            var x = document.getElementById("drop");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        function showHide1() {
+            var x = document.getElementById("drop1");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>   
+</body>
+</html>

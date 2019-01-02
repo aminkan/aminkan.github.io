@@ -1,0 +1,94 @@
+<!Doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Computer Science</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Make Event.css" />
+</head>
+<body>
+
+    <div class="nav">
+        <div class="dropdown1">
+            <img onclick="showHide1()" src="../img/ellipsis.png" alt="..." style="width:60px; cursor: pointer;">
+            <div id="drop1" >
+                <a href="Profile.html">Profile</a>
+                <a href="Make Event.html">Make Event</a>
+            </div> 
+        </div>
+        <a class="home" href="Home.html">Home</a>
+        <a href="Login.html">Log in</a>
+        <a href="Signup.html">Sign up</a>
+        <div class="dropdown">
+            <img id="imag" onclick="showHide()" src="../img/img_avatar.png" alt="avatar" style="width: 50px; border-radius:50%;"> 
+        </div>
+    </div>
+
+    <div id="drop">
+        <a href="Profile.html">Profile</a>
+        <a href="Make Event.html">Make Event</a>
+    </div> 
+
+    <div class="container">
+        <form action="#">
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" placeholder="First Name..." autofocus>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="field">Field:</label>
+                </div>
+                <div class="col-75">
+                    <select name="field" id="field">
+                        <option value="AI">Artificial Intelligence</option>
+                        <option value="CE">Computer Engineering</option>
+                        <option value="NE">Network</option>
+                        <option value="NS">Network Security</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="cv">CV:</label>
+                </div>
+                <div class="col-75">
+                    <input type="file" id="cv">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <script>
+        function showHide() {
+            var x = document.getElementById("drop");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+        function showHide1() {
+            var x = document.getElementById("drop1");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

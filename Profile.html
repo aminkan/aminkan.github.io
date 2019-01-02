@@ -1,0 +1,142 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Computer Science</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="Profile.css" />
+</head>
+<body>
+
+    <div class="nav">
+        <div class="dropdown1">
+            <img onclick="showHide1()" src="../img/ellipsis.png" alt="..." style="width:60px; cursor: pointer;">
+            <div id="drop1" >
+                <a href="Profile.html">Profile</a>
+                <a href="Make Event.html">Make Event</a>
+            </div> 
+        </div>
+        <a class="home" href="Home.html">Home</a>
+        <a href="Login.html">Log in</a>
+        <a href="Signup.html">Sign up</a>
+        <div class="dropdown">
+            <img id="imag" onclick="showHide()" src="../img/img_avatar.png" alt="avatar" style="width: 50px; border-radius:50%;"> 
+        </div>
+    </div>
+
+    <div id="drop">
+        <a href="Profile.html">Profile</a>
+        <a href="Make Event.html">Make Event</a>
+    </div>
+       
+    <div class="avat">
+        <img src="../img/img_avatar.png" alt="Profile" style="width: 100%; border-radius: 1px;">
+    </div>
+    <div class="sifo">
+        <form action="#">
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" value="First Name" autofocus>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" value="Last Name">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="uname">User Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="uname" value="User Name" minlength="5">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">Email:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" value="example@example.com">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-25">
+                    <label for="birth">Birthday:</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="birth" max="2000-01-01" min="1920-01-01" value="21-12-1996">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="pass">Password:</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="pass" value="Password" minlength="8">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="pass">Gender:</label>
+                </div>
+                <div class="col-75">
+                    <select name="gender" id="gender" value="Male">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-25">
+                    <label for="pass">Profile Image:</label>
+                </div>
+                <div class="col-75">
+                    <input type="file" id="avat">
+                </div>
+            </div>
+
+            <div class="row">
+                <input type="submit" value="Change">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+    function showHide() {
+        var x = document.getElementById("drop");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    function showHide1() {
+        var x = document.getElementById("drop1");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+    </script>
+</body>
+</html>
